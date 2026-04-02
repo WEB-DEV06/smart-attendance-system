@@ -1,0 +1,23 @@
+{
+  "name": "sas-frontend",
+  "version": "1.0.0",
+  "description": "Smart Attendance System - Frontend",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "face-api.js": "^0.22.2",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.4",
+    "vite": "^4.4.9"
+  }
+}
