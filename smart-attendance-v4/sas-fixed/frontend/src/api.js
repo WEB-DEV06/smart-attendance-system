@@ -14,17 +14,17 @@ api.interceptors.response.use(
 )
 
 // Students
-export const getStudents = (params) => api.get('/students', { params })
-export const getStudentsWithDescriptors = () => api.get('/students/with-descriptors')
-export const getStudent = (id) => api.get(`/students/${id}`)
-export const registerStudent = (data) => api.post('/students', data)
-export const updateStudent = (id, data) => api.put(`/students/${id}`, data)
-export const deleteStudent = (id) => api.delete(`/students/${id}`)
+export const getStudents = (params) => api.get('/api/students', { params })
+export const getStudentsWithDescriptors = () => api.get('/api/students/with-descriptors')
+export const getStudent = (id) => api.get(`/api/students/${id}`)
+export const registerStudent = (data) => api.post('/api/students', data)
+export const updateStudent = (id, data) => api.put(`/api/students/${id}`, data)
+export const deleteStudent = (id) => api.delete(`/api/students/${id}`)
 
 // Attendance
-export const getSummary = () => api.get('/attendance/summary')
-export const getAttendance = (params) => api.get('/attendance', { params })
-export const markAttendance = (studentId, confidence) => api.post('/attendance', { studentId, confidence })
-export const deleteAttendance = (id) => api.delete(`/attendance/${id}`)
+export const getSummary = () => api.get('/api/attendance/summary')
+export const getAttendance = (params) => api.get('/api/attendance', { params })
+export const markAttendance = (studentId, confidence) => api.post('/api/attendance', { studentId, confidence })
+export const deleteAttendance = (id) => api.delete(`/api/attendance/${id}`)
 
 export default api
