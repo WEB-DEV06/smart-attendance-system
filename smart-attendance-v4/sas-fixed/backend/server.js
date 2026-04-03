@@ -8,8 +8,7 @@ const app = express();
 const allowedOrigins = [
   process.env.FRONTEND_URL,
   'http://localhost:5173',
-  'https://smart-attendance-system-ten-gamma.vercel.app',
-  'https://attendiq-nine.vercel.app'
+  'https://smart-attendance-system-ten-gamma.vercel.app'
 ].filter(Boolean);
 
 app.use(cors({
